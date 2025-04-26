@@ -1,14 +1,14 @@
 # 📈 FinPlot
 
-A Mathematica function to display financial DateListPlots in a generic and flexible way.
+A Mathematica function to display and manipulate financial DateListPlots in a generic and flexible way.
 
 ```
 FinPlot[
-  FinancialData["BTC/USD",{2011-09-14}]
+  FinancialData["BTC/USD", {2011-09-14}]
   ,"BTC price (USD)"
   ,<|
-    imagesize->1000
-    ,plotbackground->LightYellow
+    imagesize -> 1000
+    , plotbackground -> LightGray
   |>
 ]
 ```
