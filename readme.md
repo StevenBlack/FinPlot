@@ -8,7 +8,6 @@ FinPlot[
   ,"BTC price (USD)"
   ,<|
     imagesize -> 1000
-    , plotbackground -> LightGray
   |>
 ]
 ```
