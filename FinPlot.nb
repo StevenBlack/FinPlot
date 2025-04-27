@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    422215,       7083]
-NotebookOptionsPosition[    421112,       7053]
-NotebookOutlinePosition[    421509,       7069]
-CellTagsIndexPosition[    421466,       7066]
+NotebookDataLength[    421362,       7059]
+NotebookOptionsPosition[    420485,       7033]
+NotebookOutlinePosition[    420882,       7049]
+CellTagsIndexPosition[    420839,       7046]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7028,26 +7028,6 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
    3.954763698191938*^9}, {3.954778972889502*^9, 3.9547790083187532`*^9}},
  CellLabel->
   "Out[348]=",ExpressionUUID->"8785847c-b6d6-4c6d-8cbf-89a10172ba59"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"DateDifference", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"1960", "-", "01", "-", "01"}], "}"}], ",", "Now", 
-   ",", "\"\<Month\>\""}], "]"}]], "Input",
- CellChangeTimes->{{3.954763125389016*^9, 3.95476313256153*^9}},
- CellLabel->
-  "In[342]:=",ExpressionUUID->"73d0321f-245a-40f2-9f72-0197e8a38dc1"],
-
-Cell[BoxData[
- TemplateBox[{"807.8912704936628`", "\"mo\"", "months", "\"Months\""},
-  "Quantity"]], "Output",
- CellChangeTimes->{3.954763137904701*^9, 3.954778973134549*^9},
- CellLabel->
-  "Out[342]=",ExpressionUUID->"3ed4de69-f9aa-46f5-81df-fafdb474b2bb"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -7079,10 +7059,6 @@ Cell[CellGroupData[{
 Cell[7637, 170, 26291, 501, 2935, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
  CellOpen->True],
 Cell[33931, 673, 386526, 6356, 568, "Output",ExpressionUUID->"8785847c-b6d6-4c6d-8cbf-89a10172ba59"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[420494, 7034, 330, 8, 29, "Input",ExpressionUUID->"73d0321f-245a-40f2-9f72-0197e8a38dc1"],
-Cell[420827, 7044, 257, 5, 37, "Output",ExpressionUUID->"3ed4de69-f9aa-46f5-81df-fafdb474b2bb"]
 }, Open  ]]
 }, Open  ]]
 }
