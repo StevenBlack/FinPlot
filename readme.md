@@ -4,7 +4,7 @@ A Mathematica function to display and manipulate financial DateListPlots in a ge
 
 ```
 FinPlot[
-  FinancialData["BTC/USD", {2011-09-14}]
+  FinancialData["XAU/USD", {1960 - 01 - 01}]
   ,"BTC price (USD)"
   ,<|
     imagesize -> 1000
@@ -13,4 +13,4 @@ FinPlot[
 ```
 
 
-![](BTC-price-USD.jpg)
+![](Gold-price-USD.jpg)
