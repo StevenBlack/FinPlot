@@ -5,7 +5,7 @@ A Mathematica function to display and manipulate financial DateListPlots in a ge
 ```
 FinPlot[
   FinancialData["XAU/USD", {1960 - 01 - 01}]
-  ,"BTC price (USD)"
+  ,"Gold price (USD)"
   ,<|
     filling -> Axis
     ,imagesize -> 1000
