@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    421362,       7059]
-NotebookOptionsPosition[    420485,       7033]
-NotebookOutlinePosition[    420882,       7049]
-CellTagsIndexPosition[    420839,       7046]
+NotebookDataLength[    421217,       7046]
+NotebookOptionsPosition[    420340,       7020]
+NotebookOutlinePosition[    420737,       7036]
+CellTagsIndexPosition[    420694,       7033]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -66,7 +66,7 @@ Cell[BoxData[{
          RowBox[{"SetOptions", "[", 
           RowBox[{"#", ",", 
            RowBox[{"CellOpen", "->", "False"}]}], "]"}], "&"}], "/@", 
-        "cells"}], ";"}]}], "]"}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+        "cells"}], ";"}]}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -89,7 +89,7 @@ Cell[BoxData[{
          RowBox[{"SetOptions", "[", 
           RowBox[{"#", ",", 
            RowBox[{"CellOpen", "->", "True"}]}], "]"}], "&"}], "/@", 
-        "cells"}], ";"}]}], "]"}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+        "cells"}], ";"}]}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{"Row", "[", 
   RowBox[{"{", 
    RowBox[{
@@ -128,7 +128,7 @@ Cell[BoxData[{
    3.926888343654386*^9, 3.9268883638594227`*^9}, {3.952446728614685*^9, 
    3.9524467347124243`*^9}, {3.952446844018119*^9, 3.952446861600758*^9}},
  CellLabel->
-  "In[334]:=",ExpressionUUID->"14006091-21fb-46e0-9a46-e1fcba7cf712"],
+  "In[282]:=",ExpressionUUID->"14006091-21fb-46e0-9a46-e1fcba7cf712"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -161,9 +161,9 @@ Cell[BoxData[
    3.954602728670959*^9, 3.954604835356583*^9, 3.954604909707861*^9, 
    3.954604947723937*^9, 3.9546059485811853`*^9, 3.9546964036217403`*^9, 
    3.954704100409814*^9, 3.9547044728501463`*^9, 3.954710158633637*^9, 
-   3.954762597256743*^9, 3.954778971142612*^9},
+   3.954762597256743*^9, 3.954778971142612*^9, 3.9547824569700823`*^9},
  CellLabel->
-  "Out[338]=",ExpressionUUID->"d2be78c4-194f-4199-bd94-d72e0db9002f"]
+  "Out[286]=",ExpressionUUID->"e8015b9b-85b9-4abc-a5c5-8d7b660e7da3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -191,36 +191,15 @@ Cell[BoxData[
           "\[IndentingNewLine]", ",", 
           RowBox[{"framemargins", "->", "None"}], "\[IndentingNewLine]", ",", 
           
-          RowBox[{"gridlinesx", "->", 
-           RowBox[{"Join", "[", 
-            RowBox[{
-             RowBox[{"DateRange", "[", 
-              RowBox[{
-               RowBox[{"{", "2010", "}"}], ",", 
-               RowBox[{"{", "2030", "}"}], ",", 
-               RowBox[{"Quantity", "[", 
-                RowBox[{"1", ",", "\"\<Months\>\""}], "]"}]}], "]"}], ",", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"#", ",", "Thick"}], "}"}], "&"}], "/@", 
-              RowBox[{"DateRange", "[", 
-               RowBox[{
-                RowBox[{"{", "2010", "}"}], ",", 
-                RowBox[{"{", "2030", "}"}], ",", 
-                RowBox[{"Quantity", "[", 
-                 RowBox[{"1", ",", "\"\<Years\>\""}], "]"}]}], "]"}]}]}], 
-            "]"}]}], "\[IndentingNewLine]", ",", 
+          RowBox[{"gridlinesx", "->", "Automatic"}], "\[IndentingNewLine]", ",", 
+          RowBox[{"gridlinesy", "->", "Automatic"}], "\[IndentingNewLine]", ",", 
           RowBox[{"imagemargins", "->", "20"}], "\[IndentingNewLine]", ",", 
           RowBox[{"imagesize", "->", "1000"}], "\[IndentingNewLine]", ",", 
           RowBox[{"labelstyle", "->", 
            RowBox[{"{", "14", "}"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"origindate", "->", "\"\<Sep. 14, 2011\>\""}], 
           "\[IndentingNewLine]", ",", 
-          RowBox[{"background", "->", 
-           RowBox[{"Lighter", "[", 
-            RowBox[{"LightGray", ",", "0.75"}], "]"}]}], 
-          "\[IndentingNewLine]", ",", 
+          RowBox[{"background", "->", "White"}], "\[IndentingNewLine]", ",", 
           RowBox[{"plotfunction", "->", "DateListPlot"}], 
           "\[IndentingNewLine]", ",", 
           RowBox[{"plotfunctions", "->", 
@@ -275,9 +254,8 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"{", 
              RowBox[{
-             "tsx", ",", " ", "filename", ",", " ", "gridlinesy", ",", " ", 
-              "plot", ",", " ", "updatedstr"}], "}"}], ",", 
-            "\[IndentingNewLine]", 
+             "tsx", ",", " ", "filename", ",", " ", "plot", ",", " ", 
+              "updatedstr"}], "}"}], ",", "\[IndentingNewLine]", 
             RowBox[{
              RowBox[{"updatedstr", "=", 
               RowBox[{"Style", "[", 
@@ -414,7 +392,9 @@ Cell[BoxData[
                     ",", 
                    RowBox[{"GridLines", "->", 
                     RowBox[{"{", 
-                    RowBox[{"Automatic", ",", "Automatic"}], "}"}]}], 
+                    RowBox[{
+                    RowBox[{"settings", "[", "gridlinesx", "]"}], ",", 
+                    RowBox[{"settings", "[", "gridlinesy", "]"}]}], "}"}]}], 
                    "\[IndentingNewLine]", ",", 
                    RowBox[{"LabelStyle", "->", 
                     RowBox[{"settings", "[", "labelstyle", "]"}]}], 
@@ -667,9 +647,13 @@ Cell[BoxData[
    3.954763167520502*^9, 3.954763168220624*^9}, {3.9547632345690327`*^9, 
    3.954763270097578*^9}, {3.95476331654491*^9, 3.954763318590516*^9}, {
    3.954763593963204*^9, 3.9547635995506153`*^9}, {3.954763638628916*^9, 
-   3.9547636953678703`*^9}, {3.9547789340584393`*^9, 3.954779005480721*^9}},
+   3.9547636953678703`*^9}, {3.9547789340584393`*^9, 3.954779005480721*^9}, {
+   3.954782482733335*^9, 3.954782524199308*^9}, {3.954782567546055*^9, 
+   3.9547825696718597`*^9}, {3.9547826763001757`*^9, 3.954782724675152*^9}, {
+   3.954782810422492*^9, 3.954782912133868*^9}, {3.954782954885399*^9, 
+   3.95478295526667*^9}, {3.954783042060872*^9, 3.9547830424762287`*^9}},
  CellLabel->
-  "In[346]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
+  "In[314]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
 
 Cell[BoxData[
  RowBox[{"Null", " ", 
@@ -700,9 +684,8 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
          Typeset`initDone$$, Typeset`skipInitDone$$, 
          Typeset`keyframeActionsQ$$, Typeset`keyframeList$$}, "Body" :> 
-       Module[{$CellContext`tsx$, $CellContext`filename$, \
-$CellContext`gridlinesy$, $CellContext`plot$, $CellContext`updatedstr$}, \
-$CellContext`updatedstr$ = Style[
+       Module[{$CellContext`tsx$, $CellContext`filename$, $CellContext`plot$, \
+$CellContext`updatedstr$}, $CellContext`updatedstr$ = Style[
             StringTemplate["(updated: ``)"][
              DateString[]], 
             $CellContext`settings[$CellContext`subtitlestyle]]; \
@@ -6971,8 +6954,9 @@ f77hP1Slx+Y=
              Filling -> $CellContext`settings[$CellContext`filling], 
              FillingStyle -> $CellContext`settings[$CellContext`fillingstyle],
               FrameTicksStyle -> \
-$CellContext`settings[$CellContext`ticksstyle], FrameTicks -> All, 
-             GridLines -> {Automatic, Automatic}, 
+$CellContext`settings[$CellContext`ticksstyle], FrameTicks -> All, GridLines -> {
+               $CellContext`settings[$CellContext`gridlinesx], 
+               $CellContext`settings[$CellContext`gridlinesy]}, 
              LabelStyle -> $CellContext`settings[$CellContext`labelstyle], 
              PlotLabel -> Column[{
                 Style["Gold price (USD)", 
@@ -7025,15 +7009,18 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
    3.954710159915833*^9, 3.954762598391281*^9, {3.9547627685315247`*^9, 
    3.954762784206476*^9}, 3.954763044377078*^9, 3.954763273393949*^9, 
    3.9547633214376087`*^9, 3.954763642754835*^9, {3.9547636795795603`*^9, 
-   3.954763698191938*^9}, {3.954778972889502*^9, 3.9547790083187532`*^9}},
+   3.954763698191938*^9}, {3.954778972889502*^9, 3.9547790083187532`*^9}, 
+   3.954782459188229*^9, 3.9547825748170643`*^9, 3.954782727567299*^9, {
+   3.954782831283535*^9, 3.954782915583797*^9}, 3.9547829581849813`*^9, 
+   3.954783046947239*^9},
  CellLabel->
-  "Out[348]=",ExpressionUUID->"8785847c-b6d6-4c6d-8cbf-89a10172ba59"]
+  "Out[316]=",ExpressionUUID->"38fc8637-28fe-4077-a8eb-f1c3e7f6591c"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1234, 1257},
+WindowSize->{1600, 1747},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (December 26, 2024)",
+FrontEndVersion->"14.2 for Mac OS X x86 (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"a56813e7-ec99-4951-a672-b8858fa81f9e"
 ]
@@ -7053,12 +7040,12 @@ Cell[576, 22, 743, 11, 96, "Title",ExpressionUUID->"e80cee27-40fb-4de8-aadd-ab76
 Cell[CellGroupData[{
 Cell[1344, 37, 4163, 93, 233, "Input",ExpressionUUID->"14006091-21fb-46e0-9a46-e1fcba7cf712",
  CellOpen->True],
-Cell[5510, 132, 2090, 33, 42, "Output",ExpressionUUID->"d2be78c4-194f-4199-bd94-d72e0db9002f"]
+Cell[5510, 132, 2114, 33, 42, "Output",ExpressionUUID->"e8015b9b-85b9-4abc-a5c5-8d7b660e7da3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7637, 170, 26291, 501, 2935, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
+Cell[7661, 170, 25886, 485, 2956, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
  CellOpen->True],
-Cell[33931, 673, 386526, 6356, 568, "Output",ExpressionUUID->"8785847c-b6d6-4c6d-8cbf-89a10172ba59"]
+Cell[33550, 657, 386762, 6359, 587, "Output",ExpressionUUID->"38fc8637-28fe-4077-a8eb-f1c3e7f6591c"]
 }, Open  ]]
 }, Open  ]]
 }
