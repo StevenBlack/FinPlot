@@ -7,7 +7,10 @@ FinPlot[
   FinancialData["XAU/USD", {1960 - 01 - 01}]
   ,"BTC price (USD)"
   ,<|
-    imagesize -> 1000
+    filling -> Axis
+    ,imagesize -> 1000
+    ,export -> True
+    ,origindate -> {1960-01-01}
   |>
 ]
 ```
