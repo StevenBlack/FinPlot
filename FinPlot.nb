@@ -7020,7 +7020,7 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
 },
 WindowSize->{1600, 1747},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"14.2 for Mac OS X x86 (64-bit) (December 26, 2024)",
+FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"a56813e7-ec99-4951-a672-b8858fa81f9e"
 ]
@@ -7045,7 +7045,7 @@ Cell[5510, 132, 2114, 33, 42, "Output",ExpressionUUID->"e8015b9b-85b9-4abc-a5c5-
 Cell[CellGroupData[{
 Cell[7661, 170, 25886, 485, 2956, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
  CellOpen->True],
-Cell[33550, 657, 386762, 6359, 587, "Output",ExpressionUUID->"38fc8637-28fe-4077-a8eb-f1c3e7f6591c"]
+Cell[33550, 657, 386762, 6359, 568, "Output",ExpressionUUID->"38fc8637-28fe-4077-a8eb-f1c3e7f6591c"]
 }, Open  ]]
 }, Open  ]]
 }
