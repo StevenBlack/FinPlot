@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     44419,        883]
-NotebookOptionsPosition[     43448,        856]
-NotebookOutlinePosition[     43845,        872]
-CellTagsIndexPosition[     43802,        869]
+NotebookDataLength[     45905,        900]
+NotebookOptionsPosition[     44934,        873]
+NotebookOutlinePosition[     45331,        889]
+CellTagsIndexPosition[     45288,        886]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -189,6 +189,10 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"aspectratio", "->", 
            RowBox[{"1", "/", "3"}]}], "\[IndentingNewLine]", ",", 
+          RowBox[{"colordata", "->", 
+           RowBox[{"ColorData", "[", 
+            RowBox[{"\"\<DefaultPlotColors\>\"", ",", "\"\<ColorList\>\""}], 
+            "]"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"export", "->", "False"}], "\[IndentingNewLine]", ",", 
           RowBox[{"filling", " ", "->", " ", "None"}], "\[IndentingNewLine]", 
           ",", 
@@ -213,15 +217,11 @@ Cell[BoxData[
           RowBox[{"(*", " ", "future", " ", "*)"}], "\[IndentingNewLine]", ",", 
           RowBox[{"plotrange", "->", "Full"}], "\[IndentingNewLine]", ",", 
           RowBox[{"rangestyle", "->", 
-           RowBox[{"{", 
-            RowBox[{"20", ",", "Blue"}], "}"}]}], "\[IndentingNewLine]", ",", 
-          
+           RowBox[{"{", "20", "}"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"subtitlestyle", "->", 
            RowBox[{"{", "15", "}"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"summarystyle", "->", 
-           RowBox[{"{", 
-            RowBox[{"20", ",", "Blue"}], "}"}]}], "\[IndentingNewLine]", ",", 
-          
+           RowBox[{"{", "20", "}"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"ticksstyle", "->", 
            RowBox[{"{", "16", "}"}]}], "\[IndentingNewLine]", ",", 
           RowBox[{"titlestyle", "->", 
@@ -303,9 +303,13 @@ Cell[BoxData[
               RowBox[{
                RowBox[{"{", "\[IndentingNewLine]", 
                 RowBox[{
-                 RowBox[{"Row", "[", 
-                  RowBox[{"{", "\[IndentingNewLine]", 
+                 RowBox[{"Column", "[", "\[IndentingNewLine]", 
+                  RowBox[{"MapIndexed", "[", "\[IndentingNewLine]", 
                    RowBox[{
+                    RowBox[{
+                    RowBox[{"Row", "[", 
+                    RowBox[{"{", "\[IndentingNewLine]", 
+                    RowBox[{
                     RowBox[{"Style", "[", "\[IndentingNewLine]", 
                     RowBox[{
                     RowBox[{"Row", "[", 
@@ -319,18 +323,10 @@ Cell[BoxData[
                     RowBox[{
                     FractionBox[
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<LastValue\>\"", 
-                    "]"}], "-", 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<FirstValue\>\"",
-                     "]"}]}], 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<FirstValue\>\"",
-                     "]"}]], "\[IndentingNewLine]", ",", 
+                    RowBox[{"#", "[", "\"\<LastValue\>\"", "]"}], "-", 
+                    RowBox[{"#", "[", "\"\<FirstValue\>\"", "]"}]}], 
+                    RowBox[{"#", "[", "\"\<FirstValue\>\"", "]"}]], 
+                    "\[IndentingNewLine]", ",", 
                     RowBox[{"NumberSeparator", "->", "\"\<,\>\""}], 
                     "\[IndentingNewLine]", ",", 
                     RowBox[{"DigitBlock", "->", "3"}]}], 
@@ -341,14 +337,9 @@ Cell[BoxData[
                     RowBox[{"If", "[", " ", "\[IndentingNewLine]", 
                     RowBox[{
                     RowBox[{
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<LastValue\>\"", 
-                    "]"}], ">", 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<FirstValue\>\"",
-                     "]"}]}], "\[IndentingNewLine]", ",", 
+                    RowBox[{"#", "[", "\"\<LastValue\>\"", "]"}], ">", 
+                    RowBox[{"#", "[", "\"\<FirstValue\>\"", "]"}]}], 
+                    "\[IndentingNewLine]", ",", 
                     RowBox[{"Darker", "[", "Green", "]"}], 
                     "\[IndentingNewLine]", ",", "Red"}], 
                     "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
@@ -357,24 +348,27 @@ Cell[BoxData[
                     
                     RowBox[{"\"\<Latest: \>\"", " ", "<>", " ", 
                     RowBox[{"ToString", "[", 
-                    RowBox[{
-                    RowBox[{"tslist", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "[", "\"\<LastValue\>\"", 
-                    "]"}], "]"}]}], "\[IndentingNewLine]", ",", 
+                    RowBox[{"#", "[", "\"\<LastValue\>\"", "]"}], "]"}]}], 
+                    "\[IndentingNewLine]", ",", 
                     RowBox[{"\"\<ATH: \>\"", " ", "<>", " ", 
                     RowBox[{"ToString", "[", 
                     RowBox[{
-                    RowBox[{"Max", "[", 
-                    RowBox[{"tslist", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "]"}], "//", 
+                    RowBox[{"Max", "[", "#", "]"}], "//", 
                     "QuantityMagnitude"}], "]"}]}]}], "\[IndentingNewLine]", 
                     "}"}], "\[IndentingNewLine]", ",", 
                     RowBox[{"Spacer", "[", "20", "]"}]}], 
                     "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
                     
-                    RowBox[{"settings", "[", "summarystyle", "]"}]}], 
-                    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
-                    
+                    RowBox[{"Join", "[", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "summarystyle", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "colordata", "]"}], "[", 
+                    RowBox[{"[", 
+                    RowBox[{"First", "[", "#2", "]"}], "]"}], "]"}], "}"}]}], 
+                    "]"}]}], "\[IndentingNewLine]", "]"}], 
+                    "\[IndentingNewLine]", ",", 
                     RowBox[{"Spacer", "[", "60", "]"}], "\[IndentingNewLine]",
                      ",", 
                     RowBox[{"Style", "[", "\[IndentingNewLine]", 
@@ -385,27 +379,30 @@ Cell[BoxData[
                     RowBox[{
                     RowBox[{"\"\<Min: \>\"", " ", "<>", " ", 
                     RowBox[{"ToString", "[", 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "//", "Min"}], "]"}]}], 
+                    RowBox[{"#", "//", "Min"}], "]"}]}], 
                     "\[IndentingNewLine]", ",", 
                     RowBox[{"\"\<Mean: \>\"", " ", "<>", " ", 
                     RowBox[{"ToString", "[", 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "//", "Mean"}], "]"}]}], 
-                    " ", "\[IndentingNewLine]", ",", " ", 
+                    RowBox[{"#", "//", "Mean"}], "]"}]}], " ", 
+                    "\[IndentingNewLine]", ",", " ", 
                     RowBox[{"\"\<Max: \>\"", " ", "<>", " ", 
                     RowBox[{"ToString", "[", 
-                    RowBox[{
-                    RowBox[{"tsx", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}], "//", "Max"}], "]"}]}]}], 
+                    RowBox[{"#", "//", "Max"}], "]"}]}]}], 
                     "\[IndentingNewLine]", "}"}], ",", 
                     RowBox[{"Spacer", "[", "20", "]"}]}], "]"}], ",", 
-                    RowBox[{"settings", "[", "rangestyle", "]"}]}], 
-                    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
-                   "}"}], "\[IndentingNewLine]", "]"}], ",", 
-                 "\[IndentingNewLine]", 
+                    RowBox[{"Join", "[", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "rangestyle", "]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "colordata", "]"}], "[", 
+                    RowBox[{"[", 
+                    RowBox[{"First", "[", "#2", "]"}], "]"}], "]"}], "}"}]}], 
+                    "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+                    "\[IndentingNewLine]", "}"}], "]"}], "&"}], 
+                    "\[IndentingNewLine]", ",", "tsx"}], 
+                   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}],
+                  ",", "\[IndentingNewLine]", 
                  RowBox[{
                   RowBox[{"settings", "[", "plotfunction", "]"}], "[", 
                   "\[IndentingNewLine]", 
@@ -685,9 +682,19 @@ Cell[BoxData[
    3.955204033289852*^9}, {3.9552041860882463`*^9, 3.955204241146805*^9}, {
    3.955204294722538*^9, 3.955204417726736*^9}, {3.9552044992789297`*^9, 
    3.955204528191077*^9}, 3.9552046064813557`*^9, {3.9552051113083973`*^9, 
-   3.9552051950304537`*^9}},
+   3.9552051950304537`*^9}, {3.955205424736731*^9, 3.955205509232773*^9}, {
+   3.95520554669764*^9, 3.955205552523492*^9}, {3.955205596061429*^9, 
+   3.9552056062089*^9}, {3.9552057951768303`*^9, 3.955205807809185*^9}, {
+   3.955205846467329*^9, 3.955205850694271*^9}, {3.955205901489991*^9, 
+   3.955205955521656*^9}, {3.955206057021138*^9, 3.95520606203804*^9}, 
+   3.9552068133255243`*^9, {3.95520694073114*^9, 3.955206979465087*^9}, {
+   3.955207031071617*^9, 3.955207032126542*^9}, {3.955207069590745*^9, 
+   3.95520707043239*^9}, {3.9552072019577436`*^9, 3.955207209485394*^9}, {
+   3.955207320117219*^9, 3.955207345004821*^9}, {3.955207395088773*^9, 
+   3.9552074011624327`*^9}, {3.9552074549162483`*^9, 
+   3.9552074571001883`*^9}, {3.9552075225420637`*^9, 3.955207531833256*^9}},
  CellLabel->
-  "In[117]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
+  "In[175]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
 
 Cell[CellGroupData[{
 
@@ -704,8 +711,11 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", 
       RowBox[{"btcusd", ",", 
-       RowBox[{"btcusd", " ", "-", " ", "800"}]}], "}"}], 
-     "\[IndentingNewLine]", ",", "\"\<Gold price (USD)\>\"", 
+       RowBox[{"btcusd", " ", "-", " ", "800"}], ",", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"btcusd", " ", "*", "0.75"}], ")"}], "-", " ", "380"}]}], 
+      "}"}], "\[IndentingNewLine]", ",", "\"\<Gold price (USD)\>\"", 
      "\[IndentingNewLine]", ",", 
      RowBox[{"<|", "\[IndentingNewLine]", 
       RowBox[{
@@ -721,14 +731,16 @@ Cell[BoxData[{
    3.955203173624309*^9, 3.955203175827855*^9}, {3.955203707403327*^9, 
    3.955203727764082*^9}, {3.955203781263632*^9, 3.95520382868286*^9}, 
    3.955203861411422*^9, {3.955204624666848*^9, 3.955204631675337*^9}, {
-   3.955204681178471*^9, 3.955204685945712*^9}, 3.9552050776449337`*^9},
+   3.955204681178471*^9, 3.955204685945712*^9}, 3.9552050776449337`*^9, {
+   3.9552061195683823`*^9, 3.955206122289248*^9}, {3.955207559246621*^9, 
+   3.95520756179825*^9}, {3.955207598295195*^9, 3.955207649347623*^9}},
  CellLabel->
-  "In[118]:=",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
+  "In[188]:=",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`x$$ = 9, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`x$$ = 12, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
@@ -741,7 +753,7 @@ SRvJsp7TQB3VVFLOE0oo4j755JLJHdK4xXVS+Kfav/zmkB8csMsW66yyxDxf
 mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
 8isXGHRC3w==
       "], ControlType -> PopupMenu}}, Typeset`size$$ = {
-    1040., {237.91284570312502`, 243.64477929687502`}}, Typeset`update$$ = 0, 
+    1040., {260.08984570312504`, 265.82177929687504`}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
     Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -768,38 +780,38 @@ $CellContext`tsxunnormalized$ =
            Map[# 100/#[
             "FirstValue"]& , $CellContext`tsxunnormalized$], \
 $CellContext`tsxunnormalized$]; Column[{
-           Row[{
-             Style[
-              Row[{
-                Style[
-                 ToString[
-                  
-                  PercentForm[(Part[$CellContext`tsx$, 1]["LastValue"] - 
-                    Part[$CellContext`tsx$, 1]["FirstValue"])/
-                   Part[$CellContext`tsx$, 1]["FirstValue"], NumberSeparator -> 
-                   ",", DigitBlock -> 3]], {
-                  If[
-                  Part[$CellContext`tsx$, 1]["LastValue"] > 
-                   Part[$CellContext`tsx$, 1]["FirstValue"], 
-                   Darker[Green], Red], Bold}], "Latest: " <> ToString[
-                  Part[$CellContext`tslist, 1]["LastValue"]], "ATH: " <> 
-                ToString[
-                  QuantityMagnitude[
-                   Max[
-                    Part[$CellContext`tslist, 1]]]]}, 
-               Spacer[20]], 
-              $CellContext`settings[$CellContext`summarystyle]], 
-             Spacer[60], 
-             Style[
-              Row[{"Min: " <> ToString[
-                  Min[
-                   Part[$CellContext`tsx$, 1]]], "Mean: " <> ToString[
-                  Mean[
-                   Part[$CellContext`tsx$, 1]]], "Max: " <> ToString[
-                  Max[
-                   Part[$CellContext`tsx$, 1]]]}, 
-               Spacer[20]], 
-              $CellContext`settings[$CellContext`rangestyle]]}], 
+           Column[
+            MapIndexed[Row[{
+               Style[
+                Row[{
+                  Style[
+                   ToString[
+                    
+                    PercentForm[(#["LastValue"] - #["FirstValue"])/#[
+                    "FirstValue"], NumberSeparator -> ",", DigitBlock -> 3]], {
+                    If[#["LastValue"] > #["FirstValue"], 
+                    Darker[Green], Red], Bold}], "Latest: " <> ToString[
+                    #["LastValue"]], "ATH: " <> ToString[
+                    QuantityMagnitude[
+                    Max[#]]]}, 
+                 Spacer[20]], 
+                Join[
+                 $CellContext`settings[$CellContext`summarystyle], {
+                  Part[
+                   $CellContext`settings[$CellContext`colordata], 
+                   First[#2]]}]], 
+               Spacer[60], 
+               Style[
+                Row[{"Min: " <> ToString[
+                    Min[#]], "Mean: " <> ToString[
+                    Mean[#]], "Max: " <> ToString[
+                    Max[#]]}, 
+                 Spacer[20]], 
+                Join[
+                 $CellContext`settings[$CellContext`rangestyle], {
+                  Part[
+                   $CellContext`settings[$CellContext`colordata], 
+                   First[#2]]}]]}]& , $CellContext`tsx$]], 
            $CellContext`settings[$CellContext`plotfunction][$CellContext`tsx$,
              AspectRatio -> $CellContext`settings[$CellContext`aspectratio], 
             Background -> $CellContext`settings[$CellContext`background], 
@@ -831,7 +843,7 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
 8isXGHRC3w==
          "]}}, "Options" :> {LabelStyle -> {14}, FrameMargins -> None}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1069.1, {275.6523629150391, 281.3842965087891}},
+     ImageSizeCache->{1069.1, {297.8293629150391, 303.5612965087891}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -848,9 +860,14 @@ mGKcUT4ySP///bp5QweveEkT9dRSxVPKeEwxhRSQl9yfODGiRLhB6uUFgnpD
    3.955203863937955*^9, 3.9552039442446623`*^9, {3.9552044494503508`*^9, 
    3.95520446248977*^9}, 3.955204545572858*^9, {3.955204619505331*^9, 
    3.955204639980698*^9}, 3.9552046888291483`*^9, 3.9552050808864803`*^9, 
-   3.955205204460984*^9},
+   3.955205204460984*^9, 3.9552056178315496`*^9, 3.955205816327217*^9, 
+   3.955205971419527*^9, 3.955206069408033*^9, 3.955206125404375*^9, 
+   3.955206996604591*^9, 3.9552070415361843`*^9, 3.955207095893442*^9, 
+   3.9552073666541967`*^9, 3.955207408118115*^9, 3.9552074721176567`*^9, {
+   3.955207541229095*^9, 3.955207564189248*^9}, {3.9552076224724903`*^9, 
+   3.955207651893992*^9}},
  CellLabel->
-  "Out[120]=",ExpressionUUID->"22ef8316-db79-4d37-88ba-ed1ad7fe1e34"]
+  "Out[190]=",ExpressionUUID->"4aa48637-21ee-4e1a-a44c-8f96825c03a8"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -878,11 +895,11 @@ Cell[1344, 37, 4159, 92, 233, "Input",ExpressionUUID->"14006091-21fb-46e0-9a46-e
  CellOpen->True],
 Cell[5506, 131, 2157, 33, 42, "Output",ExpressionUUID->"a117c0ad-5236-4ac1-a047-b2ba6b94ecfa"]
 }, Open  ]],
-Cell[7678, 167, 27770, 522, 2929, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
+Cell[7678, 167, 28660, 529, 3052, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
  CellOpen->True],
 Cell[CellGroupData[{
-Cell[35473, 693, 1506, 32, 254, "Input",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
-Cell[36982, 727, 6438, 125, 593, "Output",ExpressionUUID->"22ef8316-db79-4d37-88ba-ed1ad7fe1e34"]
+Cell[36363, 700, 1776, 37, 254, "Input",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
+Cell[38142, 739, 6764, 130, 637, "Output",ExpressionUUID->"4aa48637-21ee-4e1a-a44c-8f96825c03a8"]
 }, Open  ]]
 }, Open  ]]
 }
