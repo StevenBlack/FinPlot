@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     45395,        889]
-NotebookOptionsPosition[     44424,        862]
-NotebookOutlinePosition[     44821,        878]
-CellTagsIndexPosition[     44778,        875]
+NotebookDataLength[     47547,        934]
+NotebookOptionsPosition[     46354,        903]
+NotebookOutlinePosition[     46751,        919]
+CellTagsIndexPosition[     46708,        916]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -191,10 +191,7 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"aspectratio", "->", 
            RowBox[{"1", "/", "3"}]}], "\[IndentingNewLine]", ",", 
-          RowBox[{"colordata", "->", 
-           RowBox[{"ColorData", "[", 
-            RowBox[{"\"\<DefaultPlotColors\>\"", ",", "\"\<ColorList\>\""}], 
-            "]"}]}], "\[IndentingNewLine]", ",", 
+          RowBox[{"colorscheme", "->", " ", "97"}], "\[IndentingNewLine]", ",", 
           RowBox[{"export", "->", "False"}], "\[IndentingNewLine]", ",", 
           RowBox[{"filling", " ", "->", " ", "None"}], "\[IndentingNewLine]", 
           ",", 
@@ -366,7 +363,10 @@ Cell[BoxData[
                     RowBox[{"settings", "[", "summarystyle", "]"}], ",", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"settings", "[", "colordata", "]"}], "[", 
+                    RowBox[{"ColorData", "[", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "colorscheme", "]"}], 
+                    ",", "\"\<ColorList\>\""}], "]"}], "[", 
                     RowBox[{"[", 
                     RowBox[{"First", "[", "#2", "]"}], "]"}], "]"}], "}"}]}], 
                     "]"}]}], "\[IndentingNewLine]", "]"}], 
@@ -397,7 +397,10 @@ Cell[BoxData[
                     RowBox[{"settings", "[", "rangestyle", "]"}], ",", 
                     RowBox[{"{", 
                     RowBox[{
-                    RowBox[{"settings", "[", "colordata", "]"}], "[", 
+                    RowBox[{"ColorData", "[", 
+                    RowBox[{
+                    RowBox[{"settings", "[", "colorscheme", "]"}], 
+                    ",", "\"\<ColorList\>\""}], "]"}], "[", 
                     RowBox[{"[", 
                     RowBox[{"First", "[", "#2", "]"}], "]"}], "]"}], "}"}]}], 
                     "]"}]}], "\[IndentingNewLine]", "]"}]}], 
@@ -461,7 +464,11 @@ Cell[BoxData[
                     "Center"}], "\[IndentingNewLine]", "]"}]}], 
                    "\[IndentingNewLine]", ",", 
                    RowBox[{"PlotRange", "->", 
-                    RowBox[{"settings", "[", "plotrange", "]"}]}]}], 
+                    RowBox[{"settings", "[", "plotrange", "]"}]}], 
+                   "\[IndentingNewLine]", ",", 
+                   RowBox[{"PlotStyle", "->", 
+                    RowBox[{"ColorData", "[", 
+                    RowBox[{"settings", "[", "colorscheme", "]"}], "]"}]}]}], 
                   "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
                 "}"}], "\[IndentingNewLine]", ",", 
                RowBox[{"Background", "->", 
@@ -694,9 +701,13 @@ Cell[BoxData[
    3.95520707043239*^9}, {3.9552072019577436`*^9, 3.955207209485394*^9}, {
    3.955207320117219*^9, 3.955207345004821*^9}, {3.955207395088773*^9, 
    3.9552074011624327`*^9}, {3.9552074549162483`*^9, 
-   3.9552074571001883`*^9}, {3.9552075225420637`*^9, 3.955207531833256*^9}},
+   3.9552074571001883`*^9}, {3.9552075225420637`*^9, 3.955207531833256*^9}, {
+   3.955282027439416*^9, 3.955282049053577*^9}, {3.955282181486631*^9, 
+   3.9552822902674713`*^9}, {3.955282356017571*^9, 3.955282361936289*^9}, {
+   3.955282662971945*^9, 3.955282682419648*^9}, {3.955282763814406*^9, 
+   3.955282772084628*^9}, {3.955282816471015*^9, 3.955282930694977*^9}},
  CellLabel->
-  "In[202]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
+  "In[254]:=",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053"],
 
 Cell[CellGroupData[{
 
@@ -722,7 +733,8 @@ Cell[BoxData[{
      RowBox[{"<|", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"imagesize", "->", "1000"}], "\[IndentingNewLine]", ",", 
-       RowBox[{"normalize", "->", "True"}]}], "\[IndentingNewLine]", "|>"}]}],
+       RowBox[{"normalize", "->", "False"}], "\[IndentingNewLine]", ",", 
+       RowBox[{"colorscheme", "->", "97"}]}], "\[IndentingNewLine]", "|>"}]}],
      "\[IndentingNewLine]", "]"}]}], 
   ";"}], "\[IndentingNewLine]", "xauusdplot"}], "Input",
  CellChangeTimes->{{3.955203026348585*^9, 3.9552030287437077`*^9}, {
@@ -733,9 +745,10 @@ Cell[BoxData[{
    3.9552061195683823`*^9, 3.955206122289248*^9}, {3.955207559246621*^9, 
    3.95520756179825*^9}, {3.955207598295195*^9, 3.955207649347623*^9}, {
    3.955208153216605*^9, 3.9552082109189873`*^9}, {3.955208316205646*^9, 
-   3.955208319817759*^9}},
+   3.955208319817759*^9}, {3.955283106900882*^9, 3.955283165637203*^9}, {
+   3.955283206432468*^9, 3.955283255551005*^9}},
  CellLabel->
-  "In[206]:=",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
+  "In[288]:=",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
 
 Cell[BoxData[
  TagBox[
@@ -747,7 +760,7 @@ Cell[BoxData[
        Hold[$CellContext`x$$], 144, "Months: "}, {162, 156, 150, 144, 138, 
       132, 126, 120, 114, 108, 102, 96, 90, 84, 78, 72, 66, 60, 54, 48, 42, 
       36, 30, 24, 18, 12, 9, 6, 3, 2, 1}, ControlType -> PopupMenu}}, 
-    Typeset`size$$ = {1040., {260.08984570312504`, 265.82177929687504`}}, 
+    Typeset`size$$ = {1040., {258.74237050374336`, 264.47430409749336`}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
     Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -792,7 +805,9 @@ $CellContext`tsxunnormalized$]; Column[{
                 Join[
                  $CellContext`settings[$CellContext`summarystyle], {
                   Part[
-                   $CellContext`settings[$CellContext`colordata], 
+                   ColorData[
+                    $CellContext`settings[$CellContext`colorscheme], 
+                    "ColorList"], 
                    First[#2]]}]], 
                Spacer[60], 
                Style[
@@ -804,7 +819,9 @@ $CellContext`tsxunnormalized$]; Column[{
                 Join[
                  $CellContext`settings[$CellContext`rangestyle], {
                   Part[
-                   $CellContext`settings[$CellContext`colordata], 
+                   ColorData[
+                    $CellContext`settings[$CellContext`colorscheme], 
+                    "ColorList"], 
                    First[#2]]}]]}]& , $CellContext`tsx$]], 
            $CellContext`settings[$CellContext`plotfunction][$CellContext`tsx$,
              AspectRatio -> $CellContext`settings[$CellContext`aspectratio], 
@@ -824,14 +841,16 @@ $CellContext`tsxunnormalized$]; Column[{
                Style[ToString[$CellContext`x$$] <> " months", 
                 $CellContext`settings[$CellContext`titlestyle]], \
 $CellContext`updatedstr$}, Center], 
-            PlotRange -> $CellContext`settings[$CellContext`plotrange]]}, 
+            PlotRange -> $CellContext`settings[$CellContext`plotrange], 
+            PlotStyle -> ColorData[
+              $CellContext`settings[$CellContext`colorscheme]]]}, 
           Background -> $CellContext`settings[$CellContext`background]]], 
       "Specifications" :> {{{$CellContext`x$$, 144, "Months: "}, {162, 156, 
          150, 144, 138, 132, 126, 120, 114, 108, 102, 96, 90, 84, 78, 72, 66, 
          60, 54, 48, 42, 36, 30, 24, 18, 12, 9, 6, 3, 2, 1}}}, 
       "Options" :> {LabelStyle -> {14}, FrameMargins -> None}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1069.1, {297.8293629150391, 303.5612965087891}},
+     ImageSizeCache->{1069.1, {296.4818877156574, 302.2138213094074}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -854,13 +873,35 @@ $CellContext`updatedstr$}, Center],
    3.9552073666541967`*^9, 3.955207408118115*^9, 3.9552074721176567`*^9, {
    3.955207541229095*^9, 3.955207564189248*^9}, {3.9552076224724903`*^9, 
    3.955207651893992*^9}, 3.95520813479666*^9, {3.955208214668593*^9, 
-   3.955208226139977*^9}, 3.955208322174212*^9},
+   3.955208226139977*^9}, 3.955208322174212*^9, 3.955282055215171*^9, {
+   3.9552822197213573`*^9, 3.9552822633288918`*^9}, 3.9552822957390842`*^9, 
+   3.955282367160529*^9, 3.9552829399179707`*^9, {3.955283101832982*^9, 
+   3.9552831679180193`*^9}, {3.955283210657043*^9, 3.9552832576556263`*^9}},
  CellLabel->
-  "Out[208]=",ExpressionUUID->"5b0f4a70-4a99-4372-9cea-d671733d8275"]
+  "Out[290]=",ExpressionUUID->"4c273ec5-bec1-4dac-8954-29a88901dcfb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ColorData", "[", 
+   RowBox[{"97", ",", "\"\<ColorList\>\""}], "]"}], "[", 
+  RowBox[{"[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.955282954225603*^9, 3.9552829836298933`*^9}},
+ CellLabel->
+  "In[253]:=",ExpressionUUID->"3b84032b-8d3f-4571-9bd1-19b3c63b700a"],
+
+Cell[BoxData[
+ TemplateBox[<|"color" -> RGBColor[0.880722, 0.611041, 0.142051]|>,
+  "RGBColorSwatchTemplate"]], "Output",
+ CellChangeTimes->{{3.955282980182129*^9, 3.955282984256934*^9}},
+ CellLabel->
+  "Out[253]=",ExpressionUUID->"48e62c6c-1c74-469c-bc53-6ac44e802843"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1600, 1747},
+WindowSize->{1152, 1147},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.2 for Mac OS X x86 (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
@@ -884,11 +925,15 @@ Cell[1344, 37, 4163, 93, 233, "Input",ExpressionUUID->"14006091-21fb-46e0-9a46-e
  CellOpen->True],
 Cell[5510, 132, 2183, 34, 42, "Output",ExpressionUUID->"25d87ba4-9d9e-45db-8ee6-70f0cb76868c"]
 }, Open  ]],
-Cell[7708, 169, 28660, 529, 3052, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
+Cell[7708, 169, 29318, 540, 3073, "Input",ExpressionUUID->"33df2f7b-054e-4fe7-8633-eec369172053",
  CellOpen->True],
 Cell[CellGroupData[{
-Cell[36393, 702, 1667, 35, 213, "Input",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
-Cell[38063, 739, 6333, 119, 637, "Output",ExpressionUUID->"5b0f4a70-4a99-4372-9cea-d671733d8275"]
+Cell[37051, 713, 1837, 37, 233, "Input",ExpressionUUID->"5611880f-1d46-4cca-99fc-a76f374007cb"],
+Cell[38891, 752, 6820, 128, 634, "Output",ExpressionUUID->"4c273ec5-bec1-4dac-8954-29a88901dcfb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45748, 885, 305, 7, 29, "Input",ExpressionUUID->"3b84032b-8d3f-4571-9bd1-19b3c63b700a"],
+Cell[46056, 894, 270, 5, 33, "Output",ExpressionUUID->"48e62c6c-1c74-469c-bc53-6ac44e802843"]
 }, Open  ]]
 }, Open  ]]
 }
